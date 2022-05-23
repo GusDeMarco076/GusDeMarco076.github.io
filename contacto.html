@@ -22,12 +22,78 @@
     <body>
         <div id="menu" class="topnav" id="myTopnav">
             <a href="index.html"><i class="fa fa-fw fa-home"></i> Inicio</a>
-            <a href="quienes.html"><i class="fa fa-fw fa-group"></i> Quienes Somos</a>
+            <a href="servicios.html"><i class="fa fa-fw fa-group"></i> Servicios</a>
             <a href="contacto.html" class="active"><i class="fa fa-fw fa-envelope"></i> Contacto</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
               </a>
         </div>
-            
+
+        <div id="container_contact" class="contenedor">
+            <header class="header">
+                <h1>Contacta a los Beduinos....</h1>
+            </header>
+            <main id="cuerpo_contact" class="contenido_contact">
+                <h2>Ingresa tus datos y el mensaje...</h2>
+                <br>
+                <p>
+                    <div class="contacto-body">
+
+                        <div id="contacto-form">
+                    
+                            <form id="contacto-form-id" class="contacto-form-class" >
+                                <!-- <form id="contacto-form-id" class="contacto-form-class" method="post" action="contact-form-process.php"> -->
+                            
+                            <div class="contacto-form-group">
+                                <label for="Nombre" class="contacto-label">Nombre y apellido</label>
+                                <div class="contacto-input-group">
+                                    <input type="text" id="Name" name="Name" class="contacto-form-control" placeholder="Juan Perez" required>
+                                </div>
+                            </div>
+                    
+                            <div class="contacto-form-group">
+                                <label for="Email" class="contacto-label">e-Mail</label>
+                                <div class="contacto-input-group">
+                                    <input type="text" id="Email" name="Email" class="contacto-form-control" placeholder="juan@example.com" required>
+                                </div>
+                            </div>
+                    
+                            <div class="contacto-form-group">
+                                <label for="Message" class="contacto-label">Mensaje</label>
+                                <div class="contacto-input-group">
+                                    <textarea id="Message" name="Message" class="contacto-form-control" rows="6" maxlength="3000" placeholder="Ingresa tu mensaje aquí..." required></textarea>
+                                </div>
+                            </div>
+                    
+                            <div class="contacto-form-group">
+                                <p>
+                                    <button type="submit" id="contacto-button" class="contacto-btn contacto-btn-primary contacto-btn-lg contacto-btn-block" onclick="ValidateEmail()">Enviar</button>
+                                </p>
+                                <p>
+                                    <button type="reset" id="contacto-reset-button" class="contacto-btn contacto-btn-primary contacto-btn-lg contacto-btn-block">Limpiar datos</button>
+                                </p>
+                            </div>
+                            
+                        </form>
+                        </div>
+                    
+                    </div>
+                </p>
+            </main>
+    
+
+        <!-- <form name="contact" method="post">
+            <label>Nombre y Apellido:</label>
+            <input type="text" name="name" placeholder="Ingresa tu nombre" required>
+            <label>Numero de Teléfono</label>
+            <input type="text" name="phone" placeholder="+54-911-1234-1234" required>
+            <label>E-Mail</label>
+            <input type="email" name="email" placeholder="mail@mail.com" required>
+            <label>Mensaje</label>
+            <textarea name="message" placeholder="Ingresa tu mensaje...."></textarea>
+        
+            <input type="submit" name="send" value="Enviar" />
+            <input type="reset" value="Limpiar datos" name="submit">
+        </form> -->
     </body>
 </html>

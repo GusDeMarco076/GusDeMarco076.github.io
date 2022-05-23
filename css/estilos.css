@@ -68,6 +68,29 @@ body {
 	font-size: large;
 }
 
+.contenido_contact
+ {
+	width: 300%;
+	margin: auto;
+	background: #fff;
+	padding: 20px;
+	border-radius: 4px;
+	font-size: large;
+}
+
+.contenido_serv {
+	width: 300%;
+	margin: auto;
+	background: #fff;
+	padding: 20px;
+	border-radius: 4px;
+	font-size: large;
+}
+
+.contenedor .sidetext{
+	font-weight:bold;
+}
+
 .contenedor .header {
 	background: #12203E;
 	color: #fff;
@@ -102,7 +125,7 @@ body {
 
 .contenedor .widget-1,
 .contenedor .widget-2 {
-	background: #55a8fd;
+	background: #fff;
 	color: #fff;
 	height: 100px;
 	text-align: center;
@@ -117,6 +140,7 @@ body {
 
 .contenedor .widget-2 {
 	grid-area: widget-2;
+	color: #000;
 }
 
 .contenedor .footer {
@@ -126,12 +150,71 @@ body {
 	text-align: center;
 	
 }
+
+.contacto-btn-primary:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+.contacto-btn-primary:focus, .contacto-btn-primary.focus {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
+
+.contacto-btn-lg, .contacto-btn-group-lg>.contacto-btn {
+	margin-top: 2rem;
+	padding: 0.5rem 1rem;
+	margin-left: 1.5rem;
+    font-size: 0,75rem;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+}
+
+.contacto-btn-block {
+    display: block;
+    width: 20%;
+}
+
+.contacto-btn-block+.contacto-btn-block {
+    margin-top: 0.5rem;
+}
+
+.contacto-label{
+	display: block;
+	padding: 0.25rem;
+    font-size: 0,75rem;
+    line-height: 1;
+    border-radius: 0.3rem;
+}
+
+.contacto-input-group{
+	display: block;
+	padding: 0.25rem;
+    font-size: 0,75rem;
+    line-height: 1;
+    border-radius: 0.3rem;
+}
+
+input[type="submit"].contacto-btn-block, input[type="reset"].contacto-btn-block, input[type="button"].contacto-btn-block {
+    width: 20%;
+}
  
 @media screen and (max-width: 1024px) {
 	.contenedor .sidebar .sideimg {
 		max-width: 100%;
 		height: auto;
 	} 
+	.contenedor .widget-1 {
+		max-width: 100%;
+		height: auto;
+	} 	
+	.contenedor .widget-2 {
+		max-width: 100%;
+		height: auto;
+	}
 	.contenedor .footer{
 		font-size: large;
 	}
@@ -162,7 +245,67 @@ body {
 		max-width: 80%;
 		height: auto;
 	}
+	.contenedor .widget-1{
+		max-width: 80%;
+		height: auto;
+	}
+	/* .contenedor .widget-1 .widgetimg {
+		max-width: 80%;
+		height: auto;
+	} */
+	.contenedor .widget-2{
+		max-width: 80%;
+		height: auto;
+	}
+	/* .contenedor .widget-2 .widgetimg {
+		max-width: 97%;
+		height: auto;
+	} */
+	.contenido_contact
+	{
+		max-width: 100%;
+		height: auto;
+		font-size: small;
+	
+	}
+	.contenido_serv
+	{
+		/* max-width: 100%; */
+		width: 300%;
+		height: auto;
+		font-size: small;
+	
+	}
+
+	.contacto-btn-lg, .contacto-btn-group-lg>.contacto-btn {
+		margin-top: 2rem;
+		padding: 0.5rem 1rem;
+		margin-left: 1rem;
+		font-size: 0,3rem;
+		line-height: 1;
+		border-radius: 0.3rem;
+		width: 40%;
+	}
   }
+
+  @media screen and (max-width: 600px) {
+	.contenedor .widget-1{
+		max-width: 70%;
+		height: auto;
+	}
+	.contenedor .widget-1 .widgetimg {
+		max-width: 80%;
+		height: auto;
+	}
+	.contenedor .widget-2{
+		max-width: 70%;
+		height: auto;
+	}
+	.contenedor .widget-2 .widgetimg {
+		max-width: 100%;
+		height: auto;
+	}
+  } 
 
   @media screen and (max-width: 410px) {
 	.contenedor .header{
@@ -179,6 +322,30 @@ body {
 		max-width: 60%;
 		height: auto;
 	}
+	.contenedor .widget-1{
+		max-width: 60%;
+		height: auto;
+	}
+	.contenedor .widget-1 .widgetimg {
+		max-width: 60%;
+		height: auto;
+	}
+	.contenedor .widget-2{
+		max-width: 90%;
+		height: auto;
+	}
+	.contenedor .widget-2 .widgetimg {
+		max-width: 100%;
+		height: auto;
+	}
+	.contenido_serv
+	{
+		width: 100%;
+		height: auto;
+		font-size: small;
+	
+	}
+
   }
 
   @media screen and (max-width: 410px) {
