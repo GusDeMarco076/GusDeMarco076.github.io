@@ -82,9 +82,17 @@ body {
 	width: 300%;
 	margin: auto;
 	background: #fff;
+	background-image: url('/images/serv/foto9.gif');
+	background-repeat: no-repeat;
+	background-position: 50% 10%;
+	transition: 2s;
 	padding: 20px;
 	border-radius: 4px;
 	font-size: large;
+}
+
+.contenido_serv:hover {
+	background-position: 90% 10%;
 }
 
 .contenedor .sidetext{
@@ -198,6 +206,51 @@ body {
     border-radius: 0.3rem;
 }
 
+.slider {
+	width: 70%;
+	margin: 0 auto 20px;
+	text-align: center;
+  }
+  
+  .slider .photos {
+	position: relative;
+	height: 400px;
+  }
+
+  .slider .photos img {
+	width: 100%;
+	position: absolute;
+	left: 0;
+	opacity: 0;
+	transition: opacity 1s;
+  }
+
+  .slider .photos img.shown {
+	opacity: 1;
+  }
+
+  .prev:before,
+  .next:before {
+	color: #fff;
+	font-size: 3em;
+	position: absolute;
+	top: 35%;
+	cursor: pointer;
+  }
+  
+  .prev:before {
+	content: '<';
+	left: 0;
+  }
+  
+  .next:before {
+	content: '>';
+	right: 0;
+  }
+
+  .photos{
+	  max-width: 100ex;
+  }
 input[type="submit"].contacto-btn-block, input[type="reset"].contacto-btn-block, input[type="button"].contacto-btn-block {
     width: 20%;
 }
@@ -274,7 +327,7 @@ input[type="submit"].contacto-btn-block, input[type="reset"].contacto-btn-block,
 		width: 300%;
 		height: auto;
 		font-size: small;
-	
+	    background-size: 50%;
 	}
 
 	.contacto-btn-lg, .contacto-btn-group-lg>.contacto-btn {
@@ -285,6 +338,12 @@ input[type="submit"].contacto-btn-block, input[type="reset"].contacto-btn-block,
 		line-height: 1;
 		border-radius: 0.3rem;
 		width: 40%;
+	}
+
+	.prev:before,
+	.next:before {
+	  font-size: 2em;
+	  top: 20%;
 	}
   }
 
@@ -344,6 +403,12 @@ input[type="submit"].contacto-btn-block, input[type="reset"].contacto-btn-block,
 		height: auto;
 		font-size: small;
 	
+	}
+
+	.prev:before,
+	.next:before {
+	  font-size: 1.5em;
+	  top: 5%;
 	}
 
   }
